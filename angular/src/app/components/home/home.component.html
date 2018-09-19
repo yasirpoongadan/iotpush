@@ -1,0 +1,35 @@
+<body id="LoginForm">
+  <div class="container">
+ 
+  <div class="login-form">
+  <div class="main-div">
+      <div class="panel">
+     <h2>IOT Push</h2>
+     <div *ngIf="edited" class="alert alert-success box-msg" role="alert">
+       Message Pushed Successfully.
+</div>
+     </div>
+      <form  (ngSubmit)="pushMessage()" method="post">
+  
+          <div class="form-group">
+  
+  
+              <input type="text" [(ngModel)]="msg" required="true" name="msg" class="form-control"  placeholder="Message" >
+  
+          </div>
+  
+         
+          <div class="forgot">
+        
+  </div>
+          <button type="submit" class="btn btn-primary">Push</button>
+  
+      </form>
+      </div>
+  
+  </div></div>
+  
+  
+  </body>
+  
+  
